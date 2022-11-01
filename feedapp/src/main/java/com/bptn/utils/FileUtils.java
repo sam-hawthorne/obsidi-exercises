@@ -54,11 +54,12 @@ public class FileUtils {
     
     public static void writeFile() throws IOException {
     	Path p = Paths.get(HOME + "/testWrite.txt");
-    	if (Files.exists(p)) {
-    		FileWriter writer = new FileWriter(new File(p.toUri()));
-    		writer.write("Yo");
-    		writer.close();
+    	if (!Files.exists(p)) {
+    		Files.createFile(p);
     	}
+    	FileWriter writer = new FileWriter(new File(p.toUri()));
+		writer.write("Yo");
+		writer.close();
     }
     
     public static void updateFile() {
