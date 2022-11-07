@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "\"Address\"")
+@Table(name = "\"address\"")
 public class Address {
 
     @Column(name = "\"address\"")

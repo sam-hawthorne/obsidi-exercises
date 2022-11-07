@@ -3,7 +3,7 @@ package com.bptn.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "\"UserID\"")
+@Table(name = "\"userid\"")
 public class UserID {
 
 	@Id
