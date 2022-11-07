@@ -49,7 +49,7 @@ public class FeedController {
 
     }
 
-    @GetMapping(value="/post/postID/{postID}")
+    @GetMapping(value="/posts/postID/{postID}")
     public ResponseEntity<Object> getPostsByPostId(@PathVariable("postID") String postID){
         logger.info("Executing getPostByPostId API");
 
@@ -64,7 +64,7 @@ public class FeedController {
         return new ResponseEntity<>(feed,HttpStatus.OK);
     }
 
-    @GetMapping(value ="/post/postType/{postType}")
+    @GetMapping(value ="/posts/postType/{postType}")
     public ResponseEntity<Object> getPostsByPostType(@PathVariable("postType") String postType){
         logger.info("Executing getPostByPostType API");
 
