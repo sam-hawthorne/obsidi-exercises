@@ -61,6 +61,11 @@
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-aop</artifactId>
+	</dependency>	
+	<!-- Spring Mail -->
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-mail</artifactId>
 	</dependency>
 	</dependencies>
 
