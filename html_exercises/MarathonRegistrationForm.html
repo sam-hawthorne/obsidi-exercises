@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+<body>
+    <h1>REGISTRATION OPEN NOW FOR THE 2023 IRON MAN MARATHON!</h1>
+    <p>Are you <em>fast</em> enough, <em>tough</em>, enough, <em>strong</em> enough? If so, you won't want to miss this year's Iron Man Marathon in Albuquerque, New Mexico. <b>Runners who are running in a marathon can register for a marathon through a marathon registration form below. Registration will close soon. Hurry up.</b></b></p>
+    <form><!-- First Name:   -->
+        <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+        <!-- Last Name:  -->
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+        <!-- Email ID:  -->
+        <label for="email">Email ID:</label>
+          <input type="text" id="email" name="email" required><br><br>
+        <!-- Phone Number: -->
+        <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" placeholder="123-45-678"><br><br>
+        <!-- Medical Discomfort: -->
+        <label for="question">Do you have any medical discomfort?</label><br/>
+          <input type="radio" id="yes" name="question" value="Yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="question" value="no">
+          <label for="no">No</label><br><br>
+        <!-- Gender: -->
+        <label for="gender">Gender</label><br/>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br><br>
+        <!-- Rate your running Skills: -->
+          <label for="skills">Could you rate your running skills?</label><br>
+          <input type="range" min="1" max="10" value="0" class="slider" id="skills"><br><br>
+        <!-- Emergency Contact Address: -->
+          <label for="address">Emergency Contact Address</label>
+          <input type="text" id="address" name="address"><br><br>
+        <!-- Street Address -->
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street"><br><br>
+        <!-- City: -->
+          <label for="city">City</label>
+          <select name="city" id="city">
+            <option value="">Select</option>
+            <option value="London">London</option>
+            <option value="Newyork">NewYork</option>
+            <option value="NewDelhi">New Delhi</option>
+            <option value="Lucknow">Lucknow</option>
+          </select><br><br>
+        <!-- State: -->
+          <label for="state">State</label><br>
+          <select name="state" id="state">
+            <option value="">Select</option>
+            <option value="DC">DC</option>
+            <option value="Texas">Texas</option>
+            <option value="UP">UP</option>
+            <option value="NorthCarolina">North Carolina</option>
+          </select><br><br>
+        <!-- Postal/Zip Code: -->
+        <label for="postalcode">Postal / Zip Code</label>
+        <input id="zip" name="zip" type="text"><br><br>
+        <!-- Select Photo: -->
+          <label for="photo">Select photo:</label>
+          <input type="file" id="photo" name="photo" multiple><br><br>
+        <!-- Submit Button: -->
+          <input type="submit" value="Submit">
+        </form>
+</body>
+</html>
